@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LCP image swap</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      div {
+        padding: 10px;
+      }
+    </style>
+    <script>
+        const callback= () =>{
+            document.getElementById("highres").style.display = "block";
+            document.getElementById("lowres").style.display = "none";
+            document.getElementById("swapinfo").innerHTML =
+                "🚀 we just swapped the image";
+        }
+        document.addEventListener("scroll", () => {
+            callback();
+        });
+        document.addEventListener("click", () => {
+            callback();
+        });
+    </script>
+  </head>
+  <body>
+    <div style="background-color: rgb(0, 112, 164); width: 100vw; height: 10vh">
+      THIS IS THE HEADER equivalent
+    </div>
+    <div style="background-color: rgb(150, 160, 145); width: 100vw; height: 5vh">
+        THIS IS THE ads equivalent
+      </div>
+    <div>
+      <p id="swapinfo">
+        We will load a smaller image and then on user interaction, swap that
+        image
+      </p>
+    </div>
+
+    <div style="padding: 10px;">
+      <h2>AT&T iPhone 13 Pro Max 128GB Graphite</h2>
+      <p>From</p>
+      <p>$26.37/monthTerms apply</p>
+      <p>for 36 months, 0% APR</p>
+    </div>
+    <div id="lcp">
+        <div id="lowres">
+            <img
+        src="https://i5.walmartimages.com/asr/fd7bdfad-a2dc-499b-bbba-6ad347eee573.1dc82aed15d510a44a72d52fb7339166.jpeg?odnHeight=300&odnWidth=300&odnBg=FFFFFF"
+        alt=""
+        height="342"
+        width="342"
+      />
+        </div>
+        <div id="highres" style="display: none;">
+            <img
+        src="https://i5.walmartimages.com/asr/fd7bdfad-a2dc-499b-bbba-6ad347eee573.1dc82aed15d510a44a72d52fb7339166.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+        alt=""
+        height="342"
+        width="342"
+      />
+        </div>
+    </div>
+    <div>
+        <h3>Product description</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione et repellendus nesciunt minima. Eius deleniti deserunt nobis, dolorum maxime odio dolorem ipsa architecto quis eum magni, quidem odit quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi fugiat consequuntur maxime, voluptas quam deserunt ducimus earum, nulla qui ex quisquam nihil libero? Facilis quidem nihil quos omnis vero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione et repellendus nesciunt minima. Eius deleniti deserunt nobis, dolorum maxime odio dolorem ipsa architecto quis eum magni, quidem odit quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi fugiat consequuntur maxime, voluptas quam deserunt ducimus earum, nulla qui ex quisquam nihil libero? Facilis quidem nihil quos omnis vero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione et repellendus nesciunt minima. Eius deleniti deserunt nobis, dolorum maxime odio dolorem ipsa architecto quis eum magni, quidem odit quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi fugiat consequuntur maxime, voluptas quam deserunt ducimus earum, nulla qui ex quisquam nihil libero? Facilis quidem nihil quos omnis vero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione et repellendus nesciunt minima. Eius deleniti deserunt nobis, dolorum maxime odio dolorem ipsa architecto quis eum magni, quidem odit quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi fugiat consequuntur maxime, voluptas quam deserunt ducimus earum, nulla qui ex quisquam nihil libero? Facilis quidem nihil quos omnis vero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione et repellendus nesciunt minima. Eius deleniti deserunt nobis, dolorum maxime odio dolorem ipsa architecto quis eum magni, quidem odit quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi fugiat consequuntur maxime, voluptas quam deserunt ducimus earum, nulla qui ex quisquam nihil libero? Facilis quidem nihil quos omnis vero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione et repellendus nesciunt minima. Eius deleniti deserunt nobis, dolorum maxime odio dolorem ipsa architecto quis eum magni, quidem odit quo.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi fugiat consequuntur maxime, voluptas quam deserunt ducimus earum, nulla qui ex quisquam nihil libero? Facilis quidem nihil quos omnis vero.
+        </p>
+    </div>
+    <div style="background-color: rgb(219, 225, 216); width: 100vw; height: 10vh; z-index: 99;position: fixed; bottom: 0;">
+        <h3>Out of stock !</h3>
+      </div>
+    <div>
+  </body>
+</html>
