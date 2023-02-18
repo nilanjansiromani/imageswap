@@ -15,26 +15,19 @@
       }
     </style>
     <script>
-        const callback= () =>{
-            document.getElementById("highres").style.display = "block";
+        document.getElementById("highres").style.display = "block";
             document.getElementById("lowres").style.display = "none";
             document.getElementById("swapinfo").innerHTML =
                 "🚀 we just swapped the image";
         }
-        document.addEventListener("scroll", () => {
-            callback();
-        });
-        document.addEventListener("click", () => {
-            callback();
-        });
     </script>
   </head>
   <body>
-    <div style="background-color: rgb(181, 231, 255); width: 100vw; height: 10vh">
-      <p>here we swap the low quality image with the high quality image AFTER waiting for a user event</p>
+    <div style="background-color: rgb(199, 234, 250); width: 100vw; height: 10vh">
+      <p>here we swap the low quality image with the high quality image without waiting for a user event</p>
     </div>
     <div style="background-color: rgb(150, 160, 145); width: 100vw; height: 5vh">
-      <p>The entry for the LCP image should be that of the LOW resolution image</p>
+        <p>The entry for the LCP image should be that of the high resolution image</p>
       </div>
     <div>
       <p id="swapinfo">
